@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>RAMAX</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body>
+    <h1>Задание 1</h1>
+    <table class="table table-bordered">
+      <thead>
+        <tr id="ta1_head">
+          <th> </th>
+        </tr>
+      </thead>
+      <tbody id="ta1_body" >
+      </tbody>
+    </table>
+    <br>
+    <h1>Задание 2</h1>
+    <p class="inline">Фильтр</p>
+    <select id="comboBox_2" onchange="makeTable(this.selectedIndex-1)">
+      <option value="-1">Показать все</option>
+    </select>
+    <table id=table2 class="table table-bordered">
+      <thead>
+        <tr id="ta2_head">
+          <th>Номер</th>
+          <th>Год</th>
+          <th>Позиция</th>
+          <th>Текст позиции</th>
+          <th>Сумма</th>
+        </tr>
+      </thead>
+      <tbody id="ta2_body" >
+      </tbody>
+    </table>
+
+    <br>
+    <h1>Задание 3</h1>
+    <p class="inline">Фильтр по периоду с </p>
+    <select id="comboBox_3_time_start" onchange="makeTable3()"></select>
+    <p class="inline">по</p>
+    <select id="comboBox_3_time_end" onchange="makeTable3()"></select>
+
+    <table id=table3 class="table table-bordered">
+      <thead>
+        <tr id="ta3_head">
+          <th>Номер рейса</th>
+          <th>Аэропорт вылета + название</th>
+          <th>Аэропорт прилёта + название</th>
+          <th>Время вылета</th>
+          <th>Время прилёта</th>
+        </tr>
+      </thead>
+      <tbody id="ta3_body" >
+      </tbody>
+    </table>
+
+
+    <script src="js/functions.js?190"></script>
+
+    <script src="js/exam1.js?190"></script>
+    <script src="js/exam2.js?190"></script>
+    <script src="js/exam3.js?190"></script>
+
+    <script src="js/main.js?10"></script>
+  </body>
+<html>
+
